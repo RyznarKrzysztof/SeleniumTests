@@ -10,7 +10,6 @@ import java.util.List;
 public class SeleniumTests extends BasicTest{
 
     int rand = 0;
-    WebDriver driver = setup();
 
     @Test
     public void firstTest(){
@@ -69,16 +68,16 @@ public class SeleniumTests extends BasicTest{
         Select dropdownList = new Select(myList);
         dropdownList.selectByIndex(0);
 
-
-
-
-        //driver.quit();
     }
 
 
     @Test
     public void table(){
         driver.get("http://toolsqa.com/automation-practice-table/");
+
+
+
+
 
 
 
