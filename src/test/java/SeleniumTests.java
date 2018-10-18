@@ -78,7 +78,7 @@ public class SeleniumTests extends BasicTest{
 
     @Test
     public void table(){
-        driver.get("http://toolsqa.com/automation-practice-table/");\
+        driver.get("http://toolsqa.com/automation-practice-table/");
 
 
 
