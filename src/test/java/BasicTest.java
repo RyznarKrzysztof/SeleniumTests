@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeMethod;
 
 public class BasicTest {
 
-
     WebDriver driver;
 
     @BeforeMethod
@@ -18,9 +17,9 @@ public class BasicTest {
         driver = new ChromeDriver(options);
     }
 
-    @AfterMethod
-    public void quitDriver(){
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void quitDriver(){
+//        driver.quit();
+//    }
 
 }
