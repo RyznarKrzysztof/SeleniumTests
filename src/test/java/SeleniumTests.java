@@ -74,15 +74,40 @@ public class SeleniumTests extends BasicTest{
     public void table(){
         driver.get("http://toolsqa.com/automation-practice-table/");
 
+    }
 
+    @Test
+    public void alertAccept() throws InterruptedException {
+        driver.get("http://toolsqa.com/handling-alerts-using-selenium-webdriver/");
 
-
-
-
+        driver.findElement(By.xpath("//*[@id=\"content\"]/p[4]/button")).click();
+        Thread.sleep(1500);
+        driver.switchTo().alert().accept();
+        Thread.sleep(3000);
 
     }
 
+    @Test
+    public void alertAcceptOrDismiss() throws InterruptedException {
+        driver.get("http://toolsqa.com/handling-alerts-using-selenium-webdriver/");
 
+        driver.findElement(By.xpath("//*[@id=\"content\"]/p[8]/button")).click();
+        Thread.sleep(1500);
+        driver.switchTo().alert().dismiss();
+        Thread.sleep(3000);
+
+    }
+
+    @Test
+    public void alertTextField() throws InterruptedException {
+        driver.get("http://toolsqa.com/handling-alerts-using-selenium-webdriver/");
+
+        driver.findElement(By.xpath("//*[@id=\"content\"]/p[11]/button")).click();
+        Thread.sleep(1500);
+        driver.switchTo().alert().sendKeys("Yes");
+        Thread.sleep(3000);
+
+    }
 
 
 
